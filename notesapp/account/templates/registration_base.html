@@ -1,0 +1,46 @@
+<!doctype html> {% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Notekeeper - Have a note? Save it!">
+    <meta name="description" content="Free and simplistic note-keeping application. Made with love by Omkar Pathak.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://omkarpathak27.pythonanywhere.com/">
+    <meta property="og:title" content="Notekeeper - Have a note? Save it!">
+    <meta property="og:description" content="Free and simplistic note-keeping application. Made with love by Omkar Pathak.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://omkarpathak27.pythonanywhere.com/">
+    <meta property="twitter:title" content="Notekeeper - Have a note? Save it!">
+    <meta property="twitter:description" content="Free and simplistic note-keeping application. Made with love by Omkar Pathak.">
+    <meta property="twitter:image" content="">
+
+    <!-- Bootstrap and custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    {% include 'navbar.html' %}
+    <div style="margin-top: 2%">
+        {% block content %} {% endblock %}
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    {% block javascript %} {% endblock %}
+</body>
+
+</html>
