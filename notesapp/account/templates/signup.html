@@ -1,4 +1,4 @@
-{% extends 'registration_base.html' %} {% block title %}Sign Up{% endblock %} {% load crispy_forms_tags %} {% block content %}
+ {% extends 'registration_base.html' %} {% block title %}Sign Up{% endblock %} {% block content %}{% load crispy_forms_tags %}
 <div class="container">
     <div class="row">
         {% if form.non_field_errors %} {% for error in form.non_field_errors %}
@@ -14,9 +14,10 @@
             <form method="post" class="form" action="{% url 'signup' %}">
                 {% csrf_token %}
                 <div class="row">
-                    {% for field in form %}
+                    {{form}} {% for field in form %}
                     <div class="form-group col-lg-6 col-md-6">
-                        {{ field | as_crispy_field }}
+
+                        {{ field}}
                     </div>
                     {% endfor %}
                 </div>
