@@ -14,12 +14,8 @@
             <form method="post" class="form" action="{% url 'signup' %}">
                 {% csrf_token %}
                 <div class="row">
-                    {{form}} {% for field in form %}
-                    <div class="form-group col-lg-6 col-md-6">
+                    {{form}}
 
-                        {{field|as_crispy_field}}
-                    </div>
-                    {% endfor %}
                 </div>
                 <button class="btn btn-success" type="submit">Sign Up</button>
             </form>

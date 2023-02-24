@@ -135,7 +135,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Bootstrap Crispy-Forms config
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
+# CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap', 'uni_form', 'bootstrap4', 'foundation-5')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
